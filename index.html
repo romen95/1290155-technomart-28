@@ -9,7 +9,7 @@
       <div>
         <a><img src="img\logo-technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»"></a>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <label for="search-field-">Поиск:</label>
+          <label for="search-field">Поиск:</label>
           <input type="search" name="search" id="search-field">
         </form>
         <a href="">Закладки</a>
@@ -205,57 +205,59 @@
           </li>
         </ul>
       </section>
-      <section class="slider">
+      <section>
         <h2>СЕРВИСЫ</h2>
         <p>
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-        <fieldset>
-          <ul>
-            <li>
-              <label for="delivery-field">Доставка</label>
-              <input type="radio" name="service" value="delivery" id="delivery-field" checked>
-            </li>
-            <li>
-              <label for="guarantee-field">Гарантия</label>
-              <input type="radio" name="service" value="guarantee" id="guarantee-field">
-            </li>
-            <li>
-              <label for="credit-field">Кредит</label>
-              <input type="radio" name="service" value="credit" id="credit-field">
-            </li>
-          </ul>
-        </fieldset>
-        <div class="slide">
-          <h2>ДОСТАВКА</h2>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно!<br>
-            Ведь мы неплохо заработаем,<br>
-            поднимая его на ваш этаж!
-          </p>
-          <img src="img\delivery.png">
-        </div>
-        <div class="slide">
-          <h2>ГАРАНТИЯ</h2>
-          <p>
-            Если купленный у нас товар поломается или заискрит,<br>
-            а также в случае пожара, спровоцированного его<br>
-            возгоранием,  вы всегда можете быть уверены в нашей<br>
-            гарантии. Мы обменяем сгоревший товар на новый.<br>
-            Дом уж восстановите как-нибудь сами.
-          </p>
-          <img src="img\guarantee.png">
-        </div>
-        <div class="slide">
-          <h2>КРЕДИТ</h2>
-          <p>
-            Залезть в долговую яму стало проще!<br>
-            Кредитные консультанты придут вам на помощь.
-          </p>
-          <a href="">ОТПРАВИТЬ ЗАЯВКУ</a>
-          <img src="img\credit.png">
+        <div class="slider">
+          <fieldset>
+            <ul>
+              <li>
+                <label for="delivery-field">Доставка</label>
+                <input type="radio" name="service" value="delivery" id="delivery-field" checked>
+              </li>
+              <li>
+                <label for="guarantee-field">Гарантия</label>
+                <input type="radio" name="service" value="guarantee" id="guarantee-field">
+              </li>
+              <li>
+                <label for="credit-field">Кредит</label>
+                <input type="radio" name="service" value="credit" id="credit-field">
+              </li>
+            </ul>
+          </fieldset>
+          <article class="slide">
+            <h2>ДОСТАВКА</h2>
+            <p>
+              Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br>
+              поднимая его на ваш этаж!
+            </p>
+            <img src="img\delivery.png">
+          </article>
+          <article class="slide">
+            <h2>ГАРАНТИЯ</h2>
+            <p>
+              Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его<br>
+              возгоранием,  вы всегда можете быть уверены в нашей<br>
+              гарантии. Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+            <img src="img\guarantee.png">
+          </article>
+          <article class="slide">
+            <h2>КРЕДИТ</h2>
+            <p>
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a href="">ОТПРАВИТЬ ЗАЯВКУ</a>
+            <img src="img\credit.png">
+          </article>
         </div>
       </section>
       <section>
