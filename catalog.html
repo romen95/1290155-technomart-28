@@ -25,7 +25,7 @@
       <section class="header-info container">
         <p class="header-info-text">
           Интернет-магазин
-          строительных материалов
+          строительных материалов<br>
           и инструментов для ремонта
         </p>
         <div class="header-info-block">
@@ -87,7 +87,6 @@
                 <label class="min-price">
                   <input type="number" name="min-price" value="0">
                 </label>
-                -
                 <label class="max-price">
                   <input type="number" name="max-price" value="30000">
                 </label>
@@ -95,59 +94,52 @@
             </div>
           </fieldset>
           <fieldset class="form-rate-block">
-            <legend class="form-rate-title">ПРОИЗВОДИТЕЛИ:</legend>
+            <legend class="form-rate-title form-rate-title-manufacturers">ПРОИЗВОДИТЕЛИ:</legend>
             <ul class="form-rate-list">
               <li class="form-rate-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="bosch" checked>
                 <label>
-                  <input type="checkbox" name="bosch" checked>
-                  <span class="checkbox-icon"></span>
                   BOSCH
                 </label>
               </li>
               <li class="form-rate-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interskol">
                 <label>
-                  <input type="checkbox" name="interskol">
-                  <span class="checkbox-icon"></span>
                   ИНТЕРСКОЛ
                 </label>
               </li>
               <li class="form-rate-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="makita" checked>
                 <label>
-                  <input type="checkbox" name="makita" checked>
-                  <span class="checkbox-icon"></span>
                   MAKITA
                 </label>
               </li>
               <li class="form-rate-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="dewalt">
                 <label>
-                  <input type="checkbox" name="dewalt">
-                  <span class="checkbox-icon"></span>
                   DEWALT
                 </label>
               </li>
               <li class="form-rate-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="hitachi">
                 <label>
-                  <input type="checkbox" name="hitachi">
-                  <span class="checkbox-icon"></span>
                   HITACHI
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-rate-block">
-            <legend class="form-rate-title">ПИТАНИЕ:</legend>
+          <fieldset class="form-rate-block form-rate-block-power">
+            <legend class="form-rate-title form-rate-title-power">ПИТАНИЕ:</legend>
             <ul class="form-rate-list">
               <li class="form-rate-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="electric-power" value="battery" checked>
                 <label>
-                  <input type="radio" name="electric-power" value="battery" checked>
-                  <span class="radio-icon"></span>
                   АККУМУЛЯТОРНЫЕ
                 </label>
               </li>
               <li class="form-rate-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="electric-power" value="connect" id="filter-connect">
                 <label>
-                  <input type="radio" name="electric-power" value="connect" id="filter-connect">
-                  <span class="radio-icon"></span>
                   СЕТЕВЫЕ
                 </label>
               </li>
@@ -161,13 +153,13 @@
               СОРТИРОВКА:
             </p>
             <ul class="form-rate-list flex-container">
-              <li class="form-rate-item-sorting"><a class="catalog-text-style">ПО ЦЕНЕ</a></li>
-              <li class="form-rate-item-sorting"><a class="catalog-text-style" href="">ПО ТИПУ</a></li>
-              <li class="form-rate-item-sorting"><a class="catalog-text-style" href="">ПО ФУНКЦИОНАЛУ</a></li>
+              <li class="form-rate-item-sorting"><a class="catalog-text-style form-rate-link">ПО ЦЕНЕ</a></li>
+              <li class="form-rate-item-sorting"><a class="catalog-text-style form-rate-link" href="">ПО ТИПУ</a></li>
+              <li class="form-rate-item-sorting"><a class="catalog-text-style form-rate-link" href="">ПО ФУНКЦИОНАЛУ</a></li>
             </ul>
             <ul class="form-rate-list flex-container">
-              <li><a class="catalog-text-style">в</a></li>
-              <li><a class="catalog-text-style" href="">у</a></li>
+              <li><a class="catalog-triangle"></a></li>
+              <li><a class="catalog-triangle-down" href=""></a></li>
             </ul>
           </div>
           <section>
@@ -200,7 +192,7 @@
                   <button type="button" class="button button-bookmark">В ЗАКЛАДКИ</button>
                 </article>
               </li>
-              <li class="product">
+              <li class="product new">
                 <article>
                   <div class="product-image-max-height">
                     <img src="img/perforator-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000" class="product-image">
@@ -214,7 +206,7 @@
                   <button type="button" class="button button-bookmark">В ЗАКЛАДКИ</button>
                 </article>
               </li>
-              <li class="product">
+              <li class="product new">
                 <article>
                   <div class="product-image-max-height">
                     <img src="img/perforator-2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000" class="product-image">
@@ -242,13 +234,13 @@
                   <button type="button" class="button button-bookmark">В ЗАКЛАДКИ</button>
                 </article>
               </li>
-              <li class="product">
+              <li class="product new">
                 <article>
                   <div class="product-image-max-height">
                     <img src="img/perforator-2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000" class="product-image">
                   </div>
                   <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
-                  <del class="old-price visually-hidden">30500 Р.</del>
+                  <del class="old-price old-price-visually-hidden">30500 Р.</del>
                   <p class="price price-ticket">
                     12500 Р.
                   </p>
@@ -256,7 +248,7 @@
                   <button type="button" class="button button-bookmark">В ЗАКЛАДКИ</button>
                 </article>
               </li>
-              <li class="product">
+              <li class="product new">
                 <article>
                   <div class="product-image-max-height">
                     <img src="img/perforator-2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000" class="product-image">
@@ -284,13 +276,13 @@
                   <button type="button" class="button button-bookmark">В ЗАКЛАДКИ</button>
                 </article>
               </li>
-              <li class="product">
+              <li class="product new">
                 <article>
                   <div class="product-image-max-height">
                     <img src="img/perforator-2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000" class="product-image">
                   </div>
                   <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
-                  <del class="old-price visually-hidden">30500 Р.</del>
+                  <del class="old-price old-price-visually-hidden">30500 Р.</del>
                   <p class="price price-ticket">
                     12500 Р.
                   </p>
@@ -303,7 +295,7 @@
               <li><a class="pagination-link pagination-link-active">1</a></li>
               <li><a class="pagination-link" href="">2</a></li>
               <li><a class="pagination-link" href="">3</a></li>
-              <li><a class="pagination-link" href="">СЛЕДУЮЩАЯ</a></li>
+              <li><a class="pagination-link pagination-link-button" href="">СЛЕДУЮЩАЯ</a></li>
             </ul>
           </section>
         </div>
@@ -336,7 +328,7 @@
             <li><a href="" class="footer-menu-link">Доставка</a></li>
             <li><a href="" class="footer-menu-link">Контакты</a></li>
           </ul>
-          <ul class="footer-menu-list footer-menu-list-padding">
+          <ul class="footer-menu-list">
             <li><a href="" class="footer-menu-link footer-menu-link-orange">Материалы</a></li>
             <li><a href="" class="footer-menu-link footer-menu-link-orange">Техника</a></li>
             <li><a href="" class="footer-menu-link footer-menu-link-orange">Инструмент</a></li>
@@ -345,9 +337,9 @@
         </nav>
       </section>
       <div class="footer-bottom">
-        <div class="container flex-container flex-container-center">
+        <div class="container flex-container footer-bottom-block">
           <p class="footer-bottom-text reserved-text">
-            © 2010-2019 Компания «Техномарт»<br>
+            © 2010-2019 Компания «Техномарт»
             Все права защищены
           </p>
           <ul class="footer-bottom-list">
@@ -359,7 +351,7 @@
             Обратная связь:
             <a href="mailto:mail@htmlacademy.ru" class="footer-bottom-communication footer-bottom-text-orange">mail@htmlacademy.ru</a>
           </p>
-          <p class="footer-bottom-text">
+          <p class="footer-bottom-text footer-bottom-text-communication">
             Разработано -
             <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-bottom-communication footer-bottom-text-orange">htmlacademy.ru</a>
           </p>
@@ -370,11 +362,11 @@
       <p class="confirmation-modal-text">
         Товар добавлен в корзину!
       </p>
-      <div class="confirmation-modal-bottom">
+      <div class="confirmation-modal-bottom flex-container">
         <a href="" class="button">ОФОРМИТЬ ЗАКАЗ</a>
         <button type="button" class="button button-white">ПРОДОЛЖИТЬ ПОКУПКИ</button>
       </div>
-      <button type="button">Закрыть</button>
+      <button class="order-modal-close" type="button" aria-label="Закрыть"></button>
     </div>
   </body>
 </html>
