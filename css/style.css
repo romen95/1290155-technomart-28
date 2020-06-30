@@ -403,8 +403,13 @@ input[type="radio"].visually-hidden {
 
 .user-navigation-logout-svg {
   position: absolute;
-  right: 17px;
-  top: 14px;
+  right: 0px;
+  top: 0px;
+  padding: 10px;
+  padding-top: 14px;
+  padding-right: 17px;
+  padding-left: 18px;
+
 
 }
 
@@ -887,6 +892,23 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-bluelight);
 }
 
+.product-bookmark {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-top: 36px;
+  padding-right: 42px;
+  padding-bottom: 191px;
+  padding-left: 41px;
+  background-color: transparent;
+  opacity: 0;
+}
+
+.product-bookmark:hover,
+.product-bookmark:focus {
+  opacity: 1;
+}
+
 .product-title {
   width: 185px;
   font-size: 18px;
@@ -933,19 +955,49 @@ input[type="radio"].visually-hidden {
 }
 
 .button-buy {
-  display: none;
-  background: var(--basic-green);
+  display: block;
+  min-width: 135px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--basic-green);
   box-shadow: inset 0px -3px 0px #367315;
   border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.button-buy:hover,
+.button-buy:focus {
+  background-color: var(--basic-green);
+  opacity: 0.8;
+}
+
+.button-buy:active {
+  opacity: 0.9;
 }
 
 .button-bookmark {
-  display: none;
+  display: block;
+  min-width: 135px;
+  padding: 0;
+  padding-top: 9px;
+  padding-bottom: 8px;
   color: var(--basic-bluelight);
   background-color: var(--white);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
+  box-sizing: border-box;
+}
 
+.button-bookmark:hover,
+.button-bookmark:focus {
+  background-color: var(--white);
+  opacity: 0.8;
+}
+
+.button-bookmark:active {
+  opacity: 0.9;
 }
 
 .maker {
@@ -1583,14 +1635,15 @@ input[type="radio"].visually-hidden {
   margin-bottom: 21px;
 }
 
-.form-rate-item label {
+.form-rate-item .filter-input-checkbox {
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
 }
 
-.filter-input-checkbox + label::before {
+
+.filter-input-checkbox::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1602,9 +1655,10 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked::before {
   content: "";
   position: absolute;
+  display: block;
   top: -3px;
   left: -36px;
   width: 27px;
@@ -1614,7 +1668,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-input-radio + label::before {
+.filter-input-radio::before {
   content: "";
   position: absolute;
   top: -4px;
@@ -1626,14 +1680,14 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked::before {
   content: "";
   position: absolute;
   top: 4px;
   left: -27px;
-  width: 9px;
-  height: 9px;
-  background-image: url("../img/circle.svg");
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
