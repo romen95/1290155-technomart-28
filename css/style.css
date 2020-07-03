@@ -156,6 +156,11 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
 }
 
+.header-top-search:focus + .header-top-search-svg {
+  opacity: 1;
+  background-color: transparent;
+}
+
 .header-top-search:focus + .header-top-search-svg path {
   fill: var(--basic-red);
   opacity: 1;
@@ -173,7 +178,6 @@ input[type="radio"].visually-hidden {
 .header-top-search-form {
   position: relative;
   flex-grow: 1;
-
 }
 
 .header-top-order-navigation {
@@ -187,6 +191,10 @@ input[type="radio"].visually-hidden {
   padding-right: 25px;
   padding-bottom: 8px;
   padding-left: 30px;
+}
+
+.header-top-button-cart {
+  padding-left: 32px;
 }
 
 .header-top-button-bookmark {
@@ -2028,6 +2036,10 @@ input[type="radio"].visually-hidden {
   border-top: 7px solid var(--basic-red);
 }
 
+.map-modal-show {
+  display: block;
+}
+
 .order-modal {
   position: fixed;
   top: 150px;
@@ -2046,7 +2058,12 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 
-.order-modal-close {
+.order-modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-close {
   position: absolute;
   top: 16px;
   right: 11px;
@@ -2096,4 +2113,22 @@ input[type="radio"].visually-hidden {
   border-top: 7px solid var(--basic-red);
   box-sizing: border-box;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
