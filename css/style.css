@@ -160,7 +160,6 @@ input[type="radio"].visually-hidden {
 
 .header-top-order-navigation {
   display: flex;
-
 }
 
 .header-top-button {
@@ -218,11 +217,6 @@ input[type="radio"].visually-hidden {
 
 .header-top-button-cart:active::before {
   opacity: 0.3;
-}
-
-.header-top-button:hover,
-.header-top-button:focus {
-
 }
 
 .header-top-button:active {
@@ -293,7 +287,6 @@ input[type="radio"].visually-hidden {
   height: 19px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-
 }
 
 .header-info-address {
@@ -411,19 +404,6 @@ input[type="radio"].visually-hidden {
   fill: var(--basic-greylight);
 }
 
-/*
-.user-navigation-login::before {
-  content: "";
-  position: absolute;
-  top: 13px;
-  left: 15px;
-  width: 20px;
-  height: 18px;
-  background-image: url(../img/icon-user.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-*/
 .user-navigation-logout-svg {
   position: absolute;
   right: 0px;
@@ -511,7 +491,6 @@ input[type="radio"].visually-hidden {
 .category-banner {
   width: 277px;
   padding-top: 20px;
-
   padding-bottom: 21px;
   padding-left: 23px;
   background-color: var(--special-yellow);
@@ -1051,7 +1030,6 @@ input[type="radio"].visually-hidden {
 .maker-item {
   margin-top: 20px;
   margin-right: 20px;
-
 }
 
 .maker-link {
@@ -1062,7 +1040,6 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   border: 1px solid var(--border-color);
   box-sizing: border-box;
-
 }
 
 .maker-link:hover,
@@ -1514,10 +1491,6 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
-.main-catalog {
-
-}
-
 .breadcrumbs {
   position: relative;
   margin-top: 21px;
@@ -1536,7 +1509,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .breadcrumbs-list {
@@ -1857,7 +1829,6 @@ input[type="radio"].visually-hidden {
   width: 10px;
   height: 2px;
   background-color: var(--black);
-
 }
 
 .price-controls input {
@@ -1988,11 +1959,11 @@ input[type="radio"].visually-hidden {
 }
 
 .confirmation-modal-bottom {
- background-color: var(--background-modal-confirmation);
- padding-top: 37px;
- padding-right: 114px;
- padding-bottom: 37px;
- padding-left: 114px;
+  background-color: var(--background-modal-confirmation);
+  padding-top: 37px;
+  padding-right: 114px;
+  padding-bottom: 37px;
+  padding-left: 114px;
 }
 
 .button-white {
@@ -2012,7 +1983,7 @@ input[type="radio"].visually-hidden {
 
 .map-modal {
   position: fixed;
-  display: none;
+  display: block;
   background-color: var(--white);
   width: 943px;
   top: 150px;
@@ -2054,7 +2025,6 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
   background-color: transparent;
   border: none;
-
 }
 
 .order-modal-container {
