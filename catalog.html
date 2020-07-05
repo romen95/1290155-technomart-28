@@ -60,7 +60,7 @@
         <ul class="main-navigation-list">
           <li class="main-navigation-item"><a href="index.html" class="main-navigation-link">Главная</a></li>
           <li class="main-navigation-item"><a href="" class="main-navigation-link">Компания</a></li>
-          <li class="main-navigation-item"><a href="" class="main-navigation-link">Каталог</a></li>
+          <li class="main-navigation-item"><a class="main-navigation-link">Каталог</a></li>
           <li class="main-navigation-item"><a href="" class="main-navigation-link">Новости</a></li>
           <li class="main-navigation-item"><a href="" class="main-navigation-link">Спецпредложения</a></li>
           <li class="main-navigation-item"><a href="" class="main-navigation-link">Доставка</a></li>
@@ -94,10 +94,10 @@
               </div>
               <div class="price-controls">
                 <label class="min-price">
-                  <input type="number" name="min-price" value="0">
+                  <input type="number" name="min-price" min="0" max="30000" value="0">
                 </label>
                 <label class="max-price">
-                  <input type="number" name="max-price" value="30000">
+                  <input type="number" name="max-price" min="0" max="30000" value="30000">
                 </label>
               </div>
             </div>
@@ -144,8 +144,8 @@
           </fieldset>
           <fieldset class="form-rate-block form-rate-block-power">
             <legend class="form-rate-title form-rate-title-power">ПИТАНИЕ:</legend>
-            <ul class="form-rate-list">
-              <li class="form-rate-item">
+            <ul class="form-rate-list form-rate-list-power">
+              <li class="form-rate-item  form-rate-item-power">
                 <label>
                   <input class="visually-hidden filter-input-radio" type="radio" name="electric-power" value="battery" checked>
                   <span class="radio-icon"></span>
@@ -168,12 +168,12 @@
             <p class="catalog-text-style">
               СОРТИРОВКА:
             </p>
-            <ul class="form-rate-list flex-container">
+            <ul class="form-rate-list form-rate-list-sorting flex-container">
               <li class="form-rate-item-sorting"><a class="catalog-text-style form-rate-link">ПО ЦЕНЕ</a></li>
               <li class="form-rate-item-sorting"><a class="catalog-text-style form-rate-link" href="">ПО ТИПУ</a></li>
               <li class="form-rate-item-sorting"><a class="catalog-text-style form-rate-link" href="">ПО ФУНКЦИОНАЛУ</a></li>
             </ul>
-            <ul class="form-rate-list flex-container">
+            <ul class="form-rate-list form-rate-list-sorting flex-container">
               <li><a class="catalog-triangle"></a></li>
               <li><a class="catalog-triangle-down" href=""></a></li>
             </ul>
