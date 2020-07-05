@@ -421,12 +421,12 @@ img {
   left: 15px;
 }
 
-.user-navigation-login:hover .user-navigation-login-svg path,
-.user-navigation-login:focus .user-navigation-login-svg path {
+.user-navigation-login:hover path,
+.user-navigation-login:focus path {
   fill: var(--basic-grey);
 }
 
-.user-navigation-login:active .user-navigation-login-svg path {
+.user-navigation-login:active path {
   fill: var(--basic-greylight);
 }
 
@@ -491,8 +491,8 @@ img {
 }
 
 .main-navigation-link:not([href]) {
-  background-color: var(--active-darkblue);
-  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--basic-bluelight);
+  color: var(--white);
 }
 
 .category {
@@ -1663,7 +1663,7 @@ img {
 .form-rate-list {
   padding: 0;
   margin: 0;
-  margin-top: 14px;
+  margin-top: 20px;
   list-style: none;
 }
 
